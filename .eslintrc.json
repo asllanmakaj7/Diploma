@@ -19,6 +19,8 @@
       "@typescript-eslint"
     ],
     "rules": {
-      "no-unused-vars": "off"
+      "no-unused-vars": "off",
+      "no-undef": ["warn"],
+      "no-use-before-define": "off"
     }
 }
