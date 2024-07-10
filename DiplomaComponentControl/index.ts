@@ -72,9 +72,9 @@ export class DiplomaComponentControl
     // @ts-ignore
     var crmCreditCardNumberAttribute =  this._context?.parameters?.CreditCardNumber?.attributes.LogicalName;
     // @ts-ignore  eslint-disable-line
-    Xrm.Page.getAttribute(crmCreditCardNumberAttribute).setValue(
-      this._context.parameters.CreditCardNumber.formatted
-    );
+    //Xrm.Page.getAttribute(crmCreditCardNumberAttribute).setValue(
+      //this._context.parameters.CreditCardNumber.formatted
+    //);
     if (this._creditCardErrorElement.style.display != "none") {
       var message = "The credit card number is not valid.";
       var type = "ERROR";
@@ -82,7 +82,7 @@ export class DiplomaComponentControl
       var id = "9444"; //Notification Id
       var time = 4000; //Display time in milliseconds
       // @ts-ignore eslint-disable-line
-      Xrm.Page.ui.setFormNotification(message, type, id);
+     // Xrm.Page.ui.setFormNotification(message, type, id);
       //Wait the designated time and then remove the notification
       setTimeout(function () {
         // @ts-ignore eslint-disable-line
