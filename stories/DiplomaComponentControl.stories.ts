@@ -34,7 +34,7 @@ export default {
       var container = document.createElement("div");
       container.style.margin = "2em";
       container.style.padding = "1em";
-      container.style.width = "750px";
+      //container.style.width = "750px";
       container.style.border = "dotted 1px";
 
       var storyResult = Story();
